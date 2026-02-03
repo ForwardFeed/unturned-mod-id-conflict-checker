@@ -27,7 +27,7 @@ function on_drop(event: DragEvent){
     const valid_files = files.filter(x => x.type === "text/plain")
     if (valid_files.length === 0) return
     let wait_for_all_parsing = valid_files.length
-    data_unturned_mods.value = []
+    if (! event.ctrlKey) data_unturned_mods.value = []
     valid_files.forEach((raw_file, file_index)=>{
         const file = raw_file.getAsFile()
         if (!file) return
@@ -97,7 +97,11 @@ function hint_leave(){
         <h1>
             Yep, you can drag and drop your files here now, 
         </h1>
-        <p>multiple files at once</p>
+        <p>Multiple files at once</p>
+        <p>Also, pressing control key makes that new files won't removes the one in place</p>
+        <p>If if you ever get confused what kind of file I expect, I expect: </p>
+        <a href="a.txt">this</a> or
+        <a href="b.txt">this</a>
     </div>
     <div class="panel" v-for="modlist in data_unturned_mods">
         <legend> File: {{ modlist.file_name }}</legend>
