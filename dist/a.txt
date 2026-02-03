@@ -1,0 +1,19 @@
+26400 - Camel (1 cig)
+26401 - Camel (2 cigs)
+26402 - Camel (3 cigs)
+26403 - Caracal Red's (1 cig)
+26404 - Caracal Red's (2 cigs)
+26405 - Caracal Red's (3 cigs)
+26406 - Turtle's (1 cig)
+26407 - Turtle's (2 cigs)
+26408 - Turtle's (3 cigs)
+26409 - Single Cigarette
+26410 - Top G Cigar
+26411 - Homemade Cigar
+26412 - Tobacco Seed
+26413 - Tobacco Plant
+26414 - Tobacco Leaves
+26415 - Cigarette Mask
+26416 - Lit Cigarette Mask
+26417 - Top G Cigar Mask
+26418 - Lit Top G Cigar Mask
