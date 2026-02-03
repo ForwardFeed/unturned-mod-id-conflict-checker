@@ -68,8 +68,9 @@ function compare_n_list_generic(list: UTMod[][]){
     if (list.length <= 1) return
     const first  = list[0] as UTMod[]
     const second = list[1] as UTMod[]
-    const rest   = list.slice(2)
     compare_list_two(first, second)
+    if  (list.length === 2 ) return
+    const rest   = list.slice(2)
     compare_n_list_generic([first, ...rest])
     compare_n_list_generic([second, ...rest])
 }
