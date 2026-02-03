@@ -93,6 +93,12 @@ function hint_leave(){
 </script>
 <template>
 <main @drop="on_drop" @dragover="on_dragover">
+    <div v-if="data_unturned_mods.length === 0">
+        <h1>
+            Yep, you can drag and drop your files here now, 
+        </h1>
+        <p>multiple files at once</p>
+    </div>
     <div class="panel" v-for="modlist in data_unturned_mods">
         <legend> File: {{ modlist.file_name }}</legend>
         <div class="text-box">
